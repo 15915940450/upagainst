@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>upagainst--一个jQuery小插件</title>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="author" content="Thilina Fong" />
+<meta name="description" content="" />
+<style media="screen">
+#container{
+  margin: 0 auto;
+  border-top: 2px solid #FEE307;
+  width: 700px;
+}
+.demo,.foo,.bar{
+  background: #FEE307;
+  height: 130px;
+  margin-top: 300px;
+  font-size: 30px;
+  color: #FFF;
+  text-align: center;
+  padding-top: 10px;
+}
+</style>
+<script src="js/jquery-3.0.0.min.js"></script>
+<script src="js/jquery.upagainst.js"></script>
+</head>
+<body>
+<div id="container">
+  <div class="demo">
+    demo
+  </div>
+  <div class="foo">
+    foo(up against)
+  </div>
+  <div class="bar">
+    bar
+  </div>
+  <div class="bar">
+    bar
+  </div>
+  <div class="bar">
+    bar
+  </div>
+  <div class="bar">
+    bar
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){
+  $('.foo').upAgainst({
+    dist:10
+  });
+});
+</script>
+</body>
+</html>
